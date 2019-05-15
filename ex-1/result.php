@@ -1,19 +1,5 @@
 <?php
-if ( isset( $_GET['submit'] ) ) {
-  $movie1 = $_GET['movie1'];
-  $movie2 = $_GET['movie2'];
-  $movie3 = $_GET['movie3'];
-  $movie4 = $_GET['movie4'];
-  $movie5 = $_GET['movie5'];
-};
 
-if ( isset( $_POST['submit'] ) ) {
-$movie1 = $_POST['movie1'];
-$movie2 = $_POST['movie2'];
-$movie3 = $_POST['movie3'];
-$movie4 = $_POST['movie4'];
-$movie5 = $_POST['movie5'];
-};
 
  ?>
 
@@ -33,26 +19,26 @@ $movie5 = $_POST['movie5'];
     <th>Worst movie seen</th>
   </tr>
   <tr>
-    <td><?php $movie1 ?></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td><?php echo $_POST["movie1"]?></td>
+    <td><?php echo $_POST["show1"]?></td>
+    <td><?php echo $_POST["country"]?></td>
+    <td><?php echo $_POST["worst"]?></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
+    <td><?php echo $_POST["movie2"]?></td>
+    <td><?php echo $_POST["show2"]?></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
+    <td><?php echo $_POST["movie3"]?></td>
+    <td><?php echo $_POST["show3"]?></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
+    <td><?php echo $_POST["movie4"]?></td>
+    <td><?php echo $_POST["show4"]?></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
+    <td><?php echo $_POST["movie5"]?></td>
+    <td><?php echo $_POST["show5"]?></td>
   </tr>
 </table>
   </body>
