@@ -1,0 +1,16 @@
+body {
+  display: flex;
+  justify-content: space-around;
+}
+.panel {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  text-align: center;
+  padding: 10px;
+}
+.but {
+  height: 50px;
+}
